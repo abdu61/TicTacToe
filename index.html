@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        
+    </header>
+    <main>
+        <div class="settings">
+            <div class="rounds">
+            <label for="rounds">Rounds:</label>
+            <input type="number" id="rounds" value="1" min="1">
+            </div>
+            <div class="opponent">
+            <label for="opponent">Opponent:</label>
+            <select id="opponent">
+                <option value="computer">Computer</option>
+                <option value="player">Another Player</option>
+            </select>
+            </div>
+            <div class="difficulty">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium" selected>Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            </div>
+            <input type="text" id="player-name" placeholder="Enter your name" style="display:none;">
+        </div>
+        <div class="scoreboard">
+            <p id="player-score">Player: 0</p>
+            <p id="computer-score">Computer: 0</p>
+        </div>
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+    </main>
+    <footer><p>Created with Love - Abdu</p></footer>
+    
+    <div id="summary-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="summary-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
